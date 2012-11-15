@@ -333,6 +333,7 @@
 				7B00EC8F1654BBEB00531FBD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

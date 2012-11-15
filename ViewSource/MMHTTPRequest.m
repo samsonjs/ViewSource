@@ -97,6 +97,7 @@
 
 - (void) connection: (NSURLConnection *)connection didReceiveResponse: (NSURLResponse *)response
 {
+    NSLog(@"response: %@ (%d, %@)", response, [(NSHTTPURLResponse *)response statusCode], [(NSHTTPURLResponse *)response allHeaderFields]);
     if ([response respondsToSelector: @selector(statusCode)])
     {
         _statusCode = [(NSHTTPURLResponse *)response statusCode];
