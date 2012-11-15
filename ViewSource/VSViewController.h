@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "VSSource.h"
 
 @interface VSViewController : UIViewController
+
+@property (strong, nonatomic) VSSource *source;
+@property (strong, nonatomic) IBOutlet UITextView *sourceView;
+
+- (void) loadSource: (VSSource *)source;
 
 @end

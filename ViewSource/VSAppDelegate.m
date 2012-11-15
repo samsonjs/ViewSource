@@ -7,8 +7,8 @@
 //
 
 #import "VSAppDelegate.h"
-
 #import "VSViewController.h"
+#import "VSSource.h"
 
 @implementation VSAppDelegate
 
@@ -21,6 +21,12 @@
     } else {
         self.viewController = [[VSViewController alloc] initWithNibName:@"VSViewController_iPad" bundle:nil];
     }
+
+    NSString *url = @"http://samhuri.net";
+    NSRange scrollRange = NSMakeRange(0, 0);
+    VSSource *source = [VSSource sourceWithURL: url scrollRange: scrollRange];
+    [self.viewController loadSource: source];
+    
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
     return YES;

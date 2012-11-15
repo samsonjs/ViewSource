@@ -19,6 +19,9 @@
 		7B00EC841654BBEB00531FBD /* VSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B00EC831654BBEB00531FBD /* VSViewController.m */; };
 		7B00EC871654BBEB00531FBD /* VSViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B00EC851654BBEB00531FBD /* VSViewController_iPhone.xib */; };
 		7B00EC8A1654BBEB00531FBD /* VSViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B00EC881654BBEB00531FBD /* VSViewController_iPad.xib */; };
+		7B00EC9A1654BCBC00531FBD /* MMHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B00EC971654BCBC00531FBD /* MMHTTPClient.m */; };
+		7B00EC9B1654BCBC00531FBD /* MMHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B00EC991654BCBC00531FBD /* MMHTTPRequest.m */; };
+		7B00EC9E1654C0A900531FBD /* VSSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B00EC9D1654C0A900531FBD /* VSSource.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +42,12 @@
 		7B00EC831654BBEB00531FBD /* VSViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VSViewController.m; sourceTree = "<group>"; };
 		7B00EC861654BBEB00531FBD /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/VSViewController_iPhone.xib; sourceTree = "<group>"; };
 		7B00EC891654BBEB00531FBD /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/VSViewController_iPad.xib; sourceTree = "<group>"; };
+		7B00EC961654BCBC00531FBD /* MMHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMHTTPClient.h; sourceTree = "<group>"; };
+		7B00EC971654BCBC00531FBD /* MMHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMHTTPClient.m; sourceTree = "<group>"; };
+		7B00EC981654BCBC00531FBD /* MMHTTPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMHTTPRequest.h; sourceTree = "<group>"; };
+		7B00EC991654BCBC00531FBD /* MMHTTPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMHTTPRequest.m; sourceTree = "<group>"; };
+		7B00EC9C1654C0A900531FBD /* VSSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSSource.h; sourceTree = "<group>"; };
+		7B00EC9D1654C0A900531FBD /* VSSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSSource.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +67,7 @@
 		7B00EC5B1654BBEB00531FBD = {
 			isa = PBXGroup;
 			children = (
+				7B00ECA11654C1AA00531FBD /* 3rd Party */,
 				7B00EC701654BBEB00531FBD /* ViewSource */,
 				7B00EC691654BBEB00531FBD /* Frameworks */,
 				7B00EC671654BBEB00531FBD /* Products */,
@@ -87,6 +97,8 @@
 			children = (
 				7B00EC791654BBEB00531FBD /* VSAppDelegate.h */,
 				7B00EC7A1654BBEB00531FBD /* VSAppDelegate.m */,
+				7B00EC9C1654C0A900531FBD /* VSSource.h */,
+				7B00EC9D1654C0A900531FBD /* VSSource.m */,
 				7B00EC821654BBEB00531FBD /* VSViewController.h */,
 				7B00EC831654BBEB00531FBD /* VSViewController.m */,
 				7B00EC851654BBEB00531FBD /* VSViewController_iPhone.xib */,
@@ -108,6 +120,18 @@
 				7B00EC801654BBEB00531FBD /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7B00ECA11654C1AA00531FBD /* 3rd Party */ = {
+			isa = PBXGroup;
+			children = (
+				7B00EC961654BCBC00531FBD /* MMHTTPClient.h */,
+				7B00EC971654BCBC00531FBD /* MMHTTPClient.m */,
+				7B00EC981654BCBC00531FBD /* MMHTTPRequest.h */,
+				7B00EC991654BCBC00531FBD /* MMHTTPRequest.m */,
+			);
+			name = "3rd Party";
+			path = ViewSource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -181,6 +205,9 @@
 				7B00EC771654BBEB00531FBD /* main.m in Sources */,
 				7B00EC7B1654BBEB00531FBD /* VSAppDelegate.m in Sources */,
 				7B00EC841654BBEB00531FBD /* VSViewController.m in Sources */,
+				7B00EC9A1654BCBC00531FBD /* MMHTTPClient.m in Sources */,
+				7B00EC9B1654BCBC00531FBD /* MMHTTPRequest.m in Sources */,
+				7B00EC9E1654C0A900531FBD /* VSSource.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
